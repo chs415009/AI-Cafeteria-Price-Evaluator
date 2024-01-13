@@ -1,0 +1,5 @@
+train: /content/drive/MyDrive/TheFinalProject/yolov7/data/final-train/images
+val: /content/drive/MyDrive/TheFinalProject/yolov7/data/final-valid/images
+
+nc: 9
+names: ['40dollars meal', '30dollars meal', 'box', '25dollars meal', 'white rice', 'brown rice', 'purple rice', 'plate', 'side dish']
