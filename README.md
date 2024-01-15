@@ -1,5 +1,8 @@
 # AI Cafeteria Price Evaluator
 
+<img src= git_img/evaluator.jpg width ="80%">
+
+
 ## Introduction
 We hope to use Yolov7, a powerful object detection model to implement the AI cafteria price evaluator. <br/>
 
@@ -21,11 +24,15 @@ pip install -r requirement.txt
 
 ## Data preparation
 
-### Collecting Data
+### Collecting Data 
 
 We combined images from https://github.com/andywu0913/Chinese-Cafeteria-Food-Recognition/tree/experiencor with photos collected from friends and customers dining at the cafeteria. With these two sources, we could ensure the amount and variety of the data. <br/>
 
-Our training data is also available at https://github.com/110062306/ML-Final-project/tree/master/data .
+Initial data is available at https://drive.google.com/drive/folders/1hBlf0RE-n4SQvG3TB5R9vAsyc8LkWLCa?usp=drive_link <br/>
+
+Final training data is also available at https://github.com/110062306/ML-Final-project/tree/master/data 
+
+<br/>
 
 ### Labeling
 
@@ -48,15 +55,32 @@ If this does not work, you can just refer to the link previously provided. <br/>
 python labelimg
 ```
 
-Setting Image directory (image 1)<br/>
+Setting Image directory <br/>
 
-Setting XML file storage directory (image 2)<br/>
+<img src= git_img/opendir.jpg width ="50%">
 
-Select the save format (YOLO) (iamge 3)<br/><br/>
+Setting TXT file storage directory <br/>
+
+<img src= git_img/savedir.jpg width ="50%">
+
+Select the save format (YOLO) <br/><br/>
+<img src= git_img/yolo_format.jpg width ="50%">
+
+
  
-**If you choose the wrong format, we provide a python code to convert format from PascalVOC to format YOLO.<br/>**
+**If you choose the wrong format, we provide a python code to convert format from PascalVOC to YOLO.<br/>**
 
-First, set up your xml/txt path to in_file/out_file parameter, respectively, in convert_annotation function of transfer.py <br/>
+
+* assign your `xml path` to `in_file` and `xml_path` parameters in `transfer.py` <br/>
+* assign your `txt path` to `out_file` parameter in `transfer.py`
+
+<br/>
+
+Install *lxml* package.
+
+```
+pip install lxml
+```
 
 Then, use the following code to transfer your label information format.
 
@@ -67,6 +91,15 @@ python transfer.py
 
 
 ## Training with data
+
+Setting parameters in data.yaml
+
+`train` : training image path<br/>
+`val` : validation image path<br/>
+`nc` : number of classes<br/>
+`names` : name of the corresponding class
+
+<img src=git_img/yaml_parameter.jpg width ="100%">
 
 training instruction 1
 
@@ -83,7 +116,6 @@ training instruction 2
 ## Model Performance
 
 First outcome <br/>
-(image 1)
 
 <br/>
 
