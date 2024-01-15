@@ -4,7 +4,10 @@
 
 
 ## Introduction
-We hope to use Yolov7, a powerful object detection model to implement the AI cafteria price evaluator. <br/>
+
+This project addresses the issue between standard cafeteria pricing and actual charges made by cashiers, highlighting the need for a more precise and transparent pricing system. Our objective is to enhance cafeteria pricing fairness by leveraging an Artificial Intelligence (AI) model, particularly `YOLOv7`. The proposed model aims to reduce inconsistencies in pricing through object detection in real-time, ensure customers are charged appropriate prices for their meal orders.
+
+<!-- We hope to use Yolov7, a powerful object detection model to implement the AI cafteria price evaluator. <br/> -->
 
 Yolov7：https://github.com/WongKinYiu/yolov7/tree/main
 
