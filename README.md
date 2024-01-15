@@ -1,5 +1,9 @@
 # AI Cafeteria Price Evaluator
-
+<p>
+    <a href="https://huggingface.co/spaces/mamechin/AI-Cafeteria-Price-Evaluator">
+        <img src="https://img.shields.io/badge/Demo-HuggingFace-yellow?style=plastic&logo=AirPlay%20Video&logoColor=yellow" alt="HuggingFace">
+    </a>
+</p>
 <img src= git_img/evaluator.jpg width ="80%">
 
 
