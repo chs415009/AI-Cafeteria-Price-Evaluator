@@ -32,7 +32,7 @@ Yolov7：https://github.com/WongKinYiu/yolov7/tree/main
 
 ## Installation
 
-Clone the repository! ：<br/>
+Clone the repository ! ：<br/>
 
 ```
 git clone https://github.com/110062306/ML-Final-project.git
@@ -63,14 +63,16 @@ https://github.com/110062306/ML-Final-project/tree/master/data <br/>
 
 A Recommended tool for labeling data：[LabelImg](https://github.com/HumanSignal/labelImg) 
 
-**Install using python：**
+**Installation with Python：**
 
 ```
 pip install labelImg
 pip3 install labelImg
 ```
 
-If this does not work, you can just refer to the link previously provided. <br/><br/>
+If this does not work, you can just refer to the link [LabelImg](https://github.com/HumanSignal/labelImg). <br/>
+
+<br/>
 
 **Execution：**
 
@@ -78,11 +80,11 @@ If this does not work, you can just refer to the link previously provided. <br/>
 python labelimg
 ```
 
-Setting Image directory <br/>
+1. Setting Image directory 
 
 <img src= git_img/opendir.jpg width ="50%">
 
-Setting TXT file storage directory <br/>
+2. Setting txt file storage directory <br/>
 
 <img src= git_img/savedir.jpg width ="50%">
 
