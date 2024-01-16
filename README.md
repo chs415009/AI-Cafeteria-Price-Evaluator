@@ -45,7 +45,7 @@ pip install -r requirement.txt
 ```
 <br/>
 
-## Data preparation
+## Data Preparation
 
 ### Collecting Data 
 
@@ -118,7 +118,7 @@ python transfer.py
 
 <br/>
 
-## Training with data
+## Training with Data
 
 Setting parameters in data.yaml
 
@@ -164,7 +164,7 @@ In the final version, we adjusted the iteration by stopping training when the mo
 
 <br/>
 
-## Model output examples
+## Model Output
 
 Fig.1 example:
 
@@ -183,7 +183,7 @@ In Fig.1 and Fig.2, the left side shows the original input image, the upper righ
 
 <br/>
 
-## Set up your own model
+## Set Up Your Model
 
 1. Clone repository
 
