@@ -15,6 +15,9 @@ In our project, we choose `YOLOv7 for our model development`, for its `higher ac
 the price based on the assigned pricing rule to `ensure the consistency in pricing among different instances`
 
 Yolov7：https://github.com/WongKinYiu/yolov7/tree/main <br/>
+
+<br/>
+
 <img src= git_img/Y7choose.png width ="50%">
 
 <br/>
