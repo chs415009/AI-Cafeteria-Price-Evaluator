@@ -49,7 +49,7 @@ pip install -r requirement.txt
 
 ### Collecting Data 
 
-We collected photos from students dining at the cafeteria. Then we combined our data with images from https://github.com/andywu0913/Chinese-Cafeteria-Food-Recognition/tree/experiencor to ensure the amount and variety of the data. <br/>
+We collected photos from students dining at the cafeteria. To ensure the amount and variety of the data,we also combined our data with images from https://github.com/andywu0913/Chinese-Cafeteria-Food-Recognition/tree/experiencor. <br/>
 
 Initial data is available at the link below: <br/>
 https://drive.google.com/drive/folders/1hBlf0RE-n4SQvG3TB5R9vAsyc8LkWLCa?usp=drive_link <br/>
