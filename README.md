@@ -195,7 +195,7 @@ pip install -r requirements.txt
 ### Step 3
 
 Run the application locally (link will be displayed in the terminal ex. http://127.0.0.1:7860) <br/>
-( If you want to use your own model, replace best.py with it. )
+( If you want to use your own model, replace best.pt with it. )
 ```
 gradio app.py
 ```
