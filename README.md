@@ -12,14 +12,14 @@
 
 In our daily life, the `price evaluation of the cafeteria meals may differ between individual’s point of view`. Therefore, it
 might lead to some unfair and awkward situation. To solve this embarrassing problem we decide to develop a model that
-can `give the most precised and acceptable pricing` of the meal using computer vision and deep learning techniques. <br/>
+can `give the most precised and acceptable pricing of the meal based on student restaurants in Taiwan` using computer vision and deep learning techniques. <br/>
 
-There was already a project detecting the price of cafeteria food using YOLOv5. Although YOLOv5 has been a powerful model to in computer vision task, we aim to `reach much higher
-accuracy` by finding other object detection model to address the unfair pricing problem to reach a more convincing results.<br/>
+Although a project detecting the price of cafeteria food using YOLOv5, which is a powerful model for computer vision task, has existed, we aim to `reach a higher
+accuracy` by creating another object detection model to address the pricing problem with a more convincing results.<br/>
 
-Therefore, we choose `YOLOv7 for our model development`, due to the `higher accuracy` and `shorter execution time`.
-Our goal is to develop a model capable of delivering accurate identification of cafeteria food item, and determine
-the price based on the assigned pricing rule instantly. The model aims to `ensure fairness and consistency in pricing across different instances`
+In our project, we choose `YOLOv7 for our model development`, for its `higher accuracy` and `shorter execution time`.
+We aim to develop a model capable of delivering accurate identification of cafeteria food ite as well as determine
+the price based on the assigned pricing rule to `ensure the consistency in pricing among different instances`
 <!--
 This project addresses the issue between standard cafeteria pricing and actual charges made by cashiers, highlighting the need for a more precise and transparent pricing system. Our objective is to enhance cafeteria pricing fairness by leveraging an Artificial Intelligence (AI) model, particularly `YOLOv7`. The proposed model aims to reduce inconsistencies in pricing through object detection in real-time, ensure customers are charged appropriate prices for their meal orders.
 -->
