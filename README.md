@@ -26,14 +26,20 @@ Yolov7：https://github.com/WongKinYiu/yolov7/tree/main <br/>
 
 Clone the repository：<br/>
 
+###### Use Our Model
+
 ```
 git clone https://github.com/110062306/ML-Final-project.git
 ```
 
-Setting up environment：<br/>
+###### Use original YOLOv7
 
 ```
 git clone https://github.com/WongKinYiu/yolov7.git
+```
+Setting up environment：<br/>
+
+```
 wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
 ```
 
@@ -199,7 +205,7 @@ In Fig.1 and Fig.2, the left side shows the original input image, the upper righ
 
 <br/>
 
-## Set Up Your Model
+## Set Up Your Model to a webside 
 
 1. Clone repository
 
@@ -214,17 +220,19 @@ cd AI-Cafeteria-Price-Evaluator/
 pip install -r requirements.txt
 ```
 
-3. Run the application locally
+3. Replace your best.pt with your own model
+<br/>
+
+4. Run the application locally
 
 ```
 gradio app.py
 ```
 _Link will be displayed in the terminal ex. http://127.0.0.1:7860.<br/>
-If you want to use your own model, replace best.pt with it._
 
 <br/>
 
-4. Check URL to access the model
+5. Check URL to access the model
 
 <img src=git_img/URL.jpg width ="100%">
 
