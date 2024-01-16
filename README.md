@@ -49,7 +49,7 @@ pip install -r requirement.txt
 
 ### Collecting Data 
 
-We collected photos from students dining at the cafeteria. To ensure the amount and variety of the data,we also combined our data with images from https://github.com/andywu0913/Chinese-Cafeteria-Food-Recognition/tree/experiencor. <br/>
+We collected photos from students dining at the cafeteria. To ensure the amount and variety of the data,we also combined our data with images from: [GitHub resource](https://github.com/andywu0913/Chinese-Cafeteria-Food-Recognition/tree/experiencor) <br/>
 
 Initial data is available at the link below: <br/>
 https://drive.google.com/drive/folders/1hBlf0RE-n4SQvG3TB5R9vAsyc8LkWLCa?usp=drive_link <br/>
@@ -57,11 +57,11 @@ https://drive.google.com/drive/folders/1hBlf0RE-n4SQvG3TB5R9vAsyc8LkWLCa?usp=dri
 Final training data is also available at the link below: <br/>
 https://github.com/110062306/ML-Final-project/tree/master/data <br/>
 
-
+<br/>
 
 ### Labeling
 
-A Recommended tool for labeling：[LabelImg](https://github.com/HumanSignal/labelImg) 
+A Recommended tool for labeling data：[LabelImg](https://github.com/HumanSignal/labelImg) 
 
 <br/>
 
