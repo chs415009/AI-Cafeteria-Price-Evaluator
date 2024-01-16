@@ -61,9 +61,11 @@ https://github.com/110062306/ML-Final-project/tree/master/data <br/>
 
 ### Labeling
 
-A Recommended tool for labeling data：[LabelImg](https://github.com/HumanSignal/labelImg) 
+Tool for labeling data：[LabelImg](https://github.com/HumanSignal/labelImg) 
 
-**Installation with Python：**
+<br/>
+
+**Installation using Python：**
 
 ```
 pip install labelImg
@@ -84,22 +86,23 @@ python labelimg
 
 <img src= git_img/opendir.jpg width ="50%">
 
-2. Setting txt file storage directory <br/>
+<br/>
+
+2. Setting txt file storage directory 
 
 <img src= git_img/savedir.jpg width ="50%">
 
-Select the save format (YOLO) <br/><br/>
+<br/>
+
+3. Select the save format (YOLO) 
 <img src= git_img/yolo_format.jpg width ="50%">
 
+<br/>
 
- 
-**If you choose the wrong format, we provide a python code to convert format from PascalVOC to YOLO.<br/>**
-
+**If you choose the wrong format, here is a method for converting format from PascalVOC to YOLO.<br/>**
 
 * assign your `xml path` to `in_file` and `xml_path` parameters in `transfer.py` <br/>
 * assign your `txt path` to `out_file` parameter in `transfer.py`
-
-<br/>
 
 Install *lxml* package.
 
@@ -113,7 +116,7 @@ Then, use the following code to transfer your label information format.
 python transfer.py
 ```
 
-
+<br/>
 
 ## Training with data
 
@@ -126,63 +129,67 @@ Setting parameters in data.yaml
 
 <img src=git_img/yaml_parameter.jpg width ="100%">
 
-training instruction 1
+<br/>
+
+Training part:
 
 ```
-[training instruction2 --parameter parameter1]
+!python train.py --device 0 --batch-size 16 --epochs 300 --img 640 640 --data data/final-data.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --weights yolov7.pt --name yolov7-custom --resume
 ```
 
-training instruction 2
+Prediction part:
 
 ```
-[training instruction2 --parameter parameter1]
+!python detect.py --weights runs/train/yolov7-custom/weights/best.pt --conf 0.5 --img-size 640 --source 2023_11_7_31_jpg.rf.6fb4c4d8af597cab0a6663f65df50ab9.jpg --no-trace
 ```
+
+<br/>
 
 ## Model Performance
 
-First outcome <br/>
+First version <br/>
+In the first version, we can observe that there are a lot of different classes, but we don’t have enough data to recognize each type of meal. As a result, the outcome of the confusion matrix is not ideal.
 
 <br/>
 
-Second outcome <br/>
-(image 2)
+Second version <br/>
+In the second version, we reduced the number of classes by combining all side dishes into one class called "side dish" and grouped main meals based on their prices, categorizing into "25 dollar meal", "30 dollar meal", and "40 dollar meal". After applying these changes, we observed a notable improvement in the confusion matrix shown in Fig.
 
 <br/>
 
-Final outcome <br/>
-(image 3)
+Final version <br/>
+In the final version, we adjusted the iteration by stopping training when the model's loss no longer decreased for 5 consecutive epochs. As Fig. shown, it performed much better compared to previous models.
 
 <br/>
 
-some description of the outcome.....
+<br/>
 
 ## Model output examples
 
-(example 1)
+Fig.1 example:
 
-(example 2)
+Fig.2 example:
+
+In Fig. 1 and 2, the left side shows the original input image, the upper right side shows the output image and lower right side shows the corresponding price. The output (image and price) can be obtained in real-time, and we use Hugging Face Spaces as the demo platform.
+
+<br/>
 
 ## Demo
-
 
 <a href="https://huggingface.co/spaces/mamechin/AI-Cafeteria-Price-Evaluator">
     <img src="https://img.shields.io/badge/Demo-HuggingFace-yellow?style=plastic&logo=AirPlay%20Video&logoColor=yellow" alt="HuggingFace">
 </a> <br/>
 <img src="./git_img/demo.gif" width="80%">
 
-You can set up your own model by following steps...<br/>
+### Set up your own model
 
-### Step 1
-
-Clone repository
+* Clone repository
 
 ```
 git clone https://huggingface.co/spaces/mamechin/AI-Cafeteria-Price-Evaluator
 ```
 
-### Step 2
-
-Install requirements
+* Install requirements
 
 ```
 cd AI-Cafeteria-Price-Evaluator/
@@ -192,15 +199,14 @@ cd AI-Cafeteria-Price-Evaluator/
 pip install -r requirements.txt
 ```
 
-### Step 3
+* Run the application locally
 
-Run the application locally (link will be displayed in the terminal ex. http://127.0.0.1:7860) <br/>
-( If you want to use your own model, replace best.pt with it. )
+_Link will be displayed in the terminal ex. http://127.0.0.1:7860. If you want to use your own model, replace best.pt with it._
 ```
 gradio app.py
 ```
 
-Check your URL to access the model. <br/>
+* Check URL to access the model
 
 <img src=git_img/URL.jpg width ="100%">
 
