@@ -36,6 +36,16 @@ Setting up environment：<br/>
 git clone https://github.com/WongKinYiu/yolov7.git
 wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
 ```
+
+Requirements: 
+
+* Python 3.10.12
+* NumPy 1.23.5
+* Tensorflow 2.15.0
+* Torch 2.1.0+cu121
+* OpenCV (not version dependent)
+* tqdm (not version dependent)
+
 <br/>
 
 ## Data Preparation
