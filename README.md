@@ -32,7 +32,7 @@ Yolov7：https://github.com/WongKinYiu/yolov7/tree/main
 
 ## Installation
 
-Clone the repository ! ：<br/>
+Clone the repository：<br/>
 
 ```
 git clone https://github.com/110062306/ML-Final-project.git
@@ -72,7 +72,7 @@ pip install labelImg
 pip3 install labelImg
 ```
 
-If this does not work, you can just refer to the link [LabelImg](https://github.com/HumanSignal/labelImg). <br/>
+If this does not work, please refer to the link [LabelImg](https://github.com/HumanSignal/labelImg). <br/>
 
 <br/>
 
@@ -147,17 +147,17 @@ Prediction part:
 
 ## Model Performance
 
-First version <br/>
+First version: <br/>
 In the first version, we can observe that there are a lot of different classes, but we don’t have enough data to recognize each type of meal. As a result, the outcome of the confusion matrix is not ideal.
 
 <br/>
 
-Second version <br/>
-In the second version, we reduced the number of classes by combining all side dishes into one class called "side dish" and grouped main meals based on their prices, categorizing into "25 dollar meal", "30 dollar meal", and "40 dollar meal". After applying these changes, we observed a notable improvement in the confusion matrix shown in Fig.
+Second version: <br/>
+In the second version, we reduced the number of classes by combining all side dishes into one class called "side dish" and grouped main meals based on their prices, categorizing into "25 dollar meal", "30 dollar meal", and "40 dollar meal". After applying changes, a notable improvement in the confusion matrix has shown in the figure.
 
 <br/>
 
-Final version <br/>
+Final version: <br/>
 In the final version, we adjusted the iteration by stopping training when the model's loss no longer decreased for 5 consecutive epochs. As Fig. shown, it performed much better compared to previous models.
 
 <br/>
@@ -170,7 +170,7 @@ Fig.1 example:
 
 Fig.2 example:
 
-In Fig. 1 and 2, the left side shows the original input image, the upper right side shows the output image and lower right side shows the corresponding price. The output (image and price) can be obtained in real-time, and we use Hugging Face Spaces as the demo platform.
+In Fig.1 and Fig.2, the left side shows the original input image, the upper right side shows the output image and lower right side shows the corresponding price. The output (image and price) can be obtained in real-time, and we use Hugging Face Spaces as the demo platform.
 
 <br/>
 
@@ -183,30 +183,30 @@ In Fig. 1 and 2, the left side shows the original input image, the upper right s
 
 ### Set up your own model
 
-* Clone repository
+1. Clone repository
 
 ```
 git clone https://huggingface.co/spaces/mamechin/AI-Cafeteria-Price-Evaluator
 ```
 
-* Install requirements
+2. Install requirements
 
 ```
 cd AI-Cafeteria-Price-Evaluator/
-```
-
-```
 pip install -r requirements.txt
 ```
 
-* Run the application locally
+3. Run the application locally
 
-_Link will be displayed in the terminal ex. http://127.0.0.1:7860. If you want to use your own model, replace best.pt with it._
 ```
 gradio app.py
 ```
+_Link will be displayed in the terminal ex. http://127.0.0.1:7860.<br/>
+If you want to use your own model, replace best.pt with it._
 
-* Check URL to access the model
+<br/>
+
+4. Check URL to access the model
 
 <img src=git_img/URL.jpg width ="100%">
 
