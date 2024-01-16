@@ -14,8 +14,8 @@ This project addresses the issue between standard cafeteria pricing and actual c
 In our project, we choose `YOLOv7 for our model development`, for its `higher accuracy` and `shorter execution time`. Although YOLOv8 was also released, its limited information and implementation examples available made us eventually choose YOLOv7. We aim to develop a model capable of delivering accurate identification of cafeteria food ite as well as determine
 the price based on the assigned pricing rule to `ensure the consistency in pricing among different instances`
 
-Yolov7：https://github.com/WongKinYiu/yolov7/tree/main
-<img src= git_img/Y7choose.jpg width ="50%">
+Yolov7：https://github.com/WongKinYiu/yolov7/tree/main <br/>
+<img src= git_img/Y7choose.png width ="50%">
 
 <br/>
 
