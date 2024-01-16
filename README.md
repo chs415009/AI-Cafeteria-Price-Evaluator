@@ -9,24 +9,13 @@
 
 ## Introduction
 
-In our daily life, the price evaluation of the cafeteria meals may differ between individual’s point of view. Therefore, it
-might lead to some unfair and awkward situation. To solve this embarrassing problem we decide to develop a model that
-can `give the most precised and acceptable pricing of the meal based on student restaurants in Taiwan` using computer vision and deep learning techniques. <br/>
+This project addresses the issue between standard cafeteria pricing and actual charges made by cashiers, highlighting the need for a more precise and transparent pricing system. Our objective is to enhance cafeteria pricing fairness by leveraging an Artificial Intelligence (AI) model, particularly `YOLOv7`. The proposed model aims to reduce inconsistencies in pricing through object detection in real-time, ensure customers are charged appropriate prices for their meal orders.<br/>
 
-Although a project detecting the price of cafeteria food using YOLOv5, which is a powerful model for computer vision task, has existed, we aim to reach a higher
-accuracy by creating another object detection model to address the pricing problem with a more convincing results.<br/>
-
-In our project, we choose `YOLOv7 for our model development`, for its `higher accuracy` and `shorter execution time`.
-We aim to develop a model capable of delivering accurate identification of cafeteria food ite as well as determine
+In our project, we choose `YOLOv7 for our model development`, for its `higher accuracy` and `shorter execution time`. Although YOLOv8 was also released, its limited information and implementation examples available made us eventually choose YOLOv7. We aim to develop a model capable of delivering accurate identification of cafeteria food ite as well as determine
 the price based on the assigned pricing rule to `ensure the consistency in pricing among different instances`
-<!--
-This project addresses the issue between standard cafeteria pricing and actual charges made by cashiers, highlighting the need for a more precise and transparent pricing system. Our objective is to enhance cafeteria pricing fairness by leveraging an Artificial Intelligence (AI) model, particularly `YOLOv7`. The proposed model aims to reduce inconsistencies in pricing through object detection in real-time, ensure customers are charged appropriate prices for their meal orders.
--->
-
-
-<!-- We hope to use Yolov7, a powerful object detection model to implement the AI cafteria price evaluator. <br/> -->
 
 Yolov7：https://github.com/WongKinYiu/yolov7/tree/main
+<img src= git_img/Y7choose.jpg width ="50%">
 
 <br/>
 
@@ -41,7 +30,8 @@ git clone https://github.com/110062306/ML-Final-project.git
 Setting up environment：<br/>
 
 ```
-pip install -r requirement.txt
+git clone https://github.com/WongKinYiu/yolov7.git
+wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
 ```
 <br/>
 
@@ -147,7 +137,7 @@ Prediction part:
 
 ## Model Performance
 
-First version:
+1. First version:
 
 <img src= git_img/MP1.png width ="50%">
 
@@ -155,7 +145,7 @@ In the first version, we can observe that there are a lot of different classes, 
 
 <br/>
 
-Second version:
+2. Second version:
 
 <img src= git_img/MP2.png width ="50%">
 
@@ -163,7 +153,10 @@ In the second version, we reduced the number of classes by combining all side di
 
 <br/>
 
-Final version: <br/>
+3. Final version:
+
+<img src= git_img/MP3.png width ="50%">
+
 In the final version, we adjusted the iteration by stopping training when the model's loss no longer decreased for 5 consecutive epochs. As Fig. shown, it performed much better compared to previous models.
 
 <br/>
@@ -174,7 +167,11 @@ In the final version, we adjusted the iteration by stopping training when the mo
 
 Fig.1 example:
 
+<img src= git_img/MOE1.png width ="50%">
+
 Fig.2 example:
+
+<img src= git_img/MOE2.png width ="50%">
 
 In Fig.1 and Fig.2, the left side shows the original input image, the upper right side shows the output image and lower right side shows the corresponding price. The output (image and price) can be obtained in real-time, and we use Hugging Face Spaces as the demo platform.
 
