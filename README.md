@@ -8,7 +8,6 @@
 
 
 ## Introduction
-<br/>
 
 In our daily life, the price evaluation of the cafeteria meals may differ between individual’s point of view. Therefore, it
 might lead to some unfair and awkward situation. To solve this embarrassing problem we decide to develop a model that
@@ -44,18 +43,21 @@ Setting up environment：<br/>
 ```
 pip install -r requirement.txt
 ```
+<br/>
 
 ## Data preparation
 
 ### Collecting Data 
 
-We combined images from https://github.com/andywu0913/Chinese-Cafeteria-Food-Recognition/tree/experiencor with photos collected from friends and customers dining at the cafeteria. With these two sources, we could ensure the amount and variety of the data. <br/>
+We collected photos from students dining at the cafeteria. Then we combined our data with images from https://github.com/andywu0913/Chinese-Cafeteria-Food-Recognition/tree/experiencor to ensure the amount and variety of the data. <br/>
 
-Initial data is available at https://drive.google.com/drive/folders/1hBlf0RE-n4SQvG3TB5R9vAsyc8LkWLCa?usp=drive_link <br/>
+Initial data is available at the link below: <br/>
+https://drive.google.com/drive/folders/1hBlf0RE-n4SQvG3TB5R9vAsyc8LkWLCa?usp=drive_link <br/>
 
-Final training data is also available at https://github.com/110062306/ML-Final-project/tree/master/data 
+Final training data is also available at the link below: <br/>
+https://github.com/110062306/ML-Final-project/tree/master/data <br/>
 
-<br/>
+
 
 ### Labeling
 
