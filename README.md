@@ -181,7 +181,9 @@ In Fig.1 and Fig.2, the left side shows the original input image, the upper righ
 </a> <br/>
 <img src="./git_img/demo.gif" width="80%">
 
-### Set up your own model
+<br/>
+
+## Set up your own model
 
 1. Clone repository
 
