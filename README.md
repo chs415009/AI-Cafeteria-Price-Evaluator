@@ -8,14 +8,31 @@
 
 
 ## Introduction
+<br/>
 
+In our daily life, the `price evaluation of the cafeteria meals may differ between individual’s point of view`. Therefore, it
+might lead to some unfair and awkward situation. To solve this embarrassing problem we decide to develop a model that
+can `give the most precised and acceptable pricing` of the meal using computer vision and deep learning techniques. <br/>
+
+There was already a project detecting the price of cafeteria food using YOLOv5. Although YOLOv5 has been a powerful model to in computer vision task, we aim to `reach much higher
+accuracy` by finding other object detection model to address the unfair pricing problem to reach a more convincing results.<br/>
+
+Therefore, we choose `YOLOv7 for our model development`, due to the `higher accuracy` and `shorter execution time`.
+Our goal is to develop a model capable of delivering accurate identification of cafeteria food item, and determine
+the price based on the assigned pricing rule instantly. The model aims to `ensure fairness and consistency in pricing across different instances`
+<!--
 This project addresses the issue between standard cafeteria pricing and actual charges made by cashiers, highlighting the need for a more precise and transparent pricing system. Our objective is to enhance cafeteria pricing fairness by leveraging an Artificial Intelligence (AI) model, particularly `YOLOv7`. The proposed model aims to reduce inconsistencies in pricing through object detection in real-time, ensure customers are charged appropriate prices for their meal orders.
+-->
+
 
 <!-- We hope to use Yolov7, a powerful object detection model to implement the AI cafteria price evaluator. <br/> -->
 
 Yolov7：https://github.com/WongKinYiu/yolov7/tree/main
 
+<br/>
+
 ## Installation
+<br/>
 
 You can just clone this repository：<br/>
 
@@ -30,6 +47,7 @@ pip install -r requirement.txt
 ```
 
 ## Data preparation
+<br/>
 
 ### Collecting Data 
 
@@ -152,12 +170,39 @@ some description of the outcome.....
 </a> <br/>
 <img src="./git_img/demo.gif" width="80%">
 
-if you want to set up your own model...<br/>
+You can set up your own model by following steps...<br/>
 
 ### Step 1
 
+Clone repository
+
+```
+git clone https://huggingface.co/spaces/mamechin/AI-Cafeteria-Price-Evaluator
+```
+
 ### Step 2
 
+Install requirements
+
+```
+cd AI-Cafeteria-Price-Evaluator/
+```
+
+```
+pip install -r requirements.txt
+```
+
 ### Step 3
+
+Run the application locally (link will be displayed in the terminal ex. http://127.0.0.1:7860) <br/>
+( If you want to use your own model, replace best.py with it. )
+```
+gradio app.py
+```
+
+Check your URL to access the model. <br/>
+
+<img src=git_img/URL.jpg width ="100%">
+
 
 
