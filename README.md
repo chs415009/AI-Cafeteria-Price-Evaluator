@@ -147,12 +147,18 @@ Prediction part:
 
 ## Model Performance
 
-First version: <br/>
+First version:
+
+<img src= git_img/MP1.png width ="50%">
+
 In the first version, we can observe that there are a lot of different classes, but we don’t have enough data to recognize each type of meal. As a result, the outcome of the confusion matrix is not ideal.
 
 <br/>
 
-Second version: <br/>
+Second version:
+
+<img src= git_img/MP2.png width ="50%">
+
 In the second version, we reduced the number of classes by combining all side dishes into one class called "side dish" and grouped main meals based on their prices, categorizing into "25 dollar meal", "30 dollar meal", and "40 dollar meal". After applying changes, a notable improvement in the confusion matrix has shown in the figure.
 
 <br/>
